@@ -11,9 +11,9 @@ namespace coup {
         vector<string> Players;
     public:
         Game();
-        string turn();
-        vector<string> players();
-        string winner();
+        string static turn();
+        vector<string>players();
+        string static winner();
         ~Game();
     };
 }
