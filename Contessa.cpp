@@ -8,10 +8,13 @@
 using namespace std;
 namespace coup {
 
-    Contessa::Contessa(Game game,string name): Player(game, name){
+    Contessa::Contessa(const Game &game, const string& name): Player(game, name){
 
     }
-    void block(Assassin assassin){
+    Contessa::~Contessa()
+    {
+    }
+    void Contessa::block(const Player &p){
 
     }
 

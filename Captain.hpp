@@ -3,14 +3,18 @@
 #include <string>
 #include "Player.hpp"
 #include "Game.hpp"
+#include "Contessa.hpp"
+#include "Duke.hpp"
+#pragma once
 using namespace std;
 namespace coup {
     class Captain: public Player {
     private:
         Game game;
     public:
-        Captain (Game game,string name);
-        void steal (string name);
+        Captain (const Game &game, const string& name);
+        void steal (const Contessa &con);
+        void block(const Duke &duke);
 
         ~Captain();
     };

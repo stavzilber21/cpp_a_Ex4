@@ -1,4 +1,3 @@
-
 #include "Ambassador.hpp"
 #include <iostream>
 #include <vector>
@@ -7,11 +6,16 @@
 #include "Game.hpp"
 using namespace std;
 namespace coup {
-    Ambassador::Ambassador(Game game, string name): Player(game,name) {
+    Ambassador::Ambassador(const Game &game, const string& name): Player(game,name) {
 
     }
-    void transfer(string name1, string name2){
+    Ambassador::~Ambassador()
+    {
+    }
+
+    void  Ambassador::transfer(Duke &duke,Assassin &assassin){
 
     }
+
 
 }

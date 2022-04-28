@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include "Game.hpp"
+#pragma once
 using namespace std;
 
 namespace coup {
@@ -9,12 +10,13 @@ namespace coup {
     private:
         int coin;
         string name;
-        bool turn;
+        Game game;
+//        bool turn;
     public:
-        Player(Game game, string name);
+        Player(const Game &game, const string& name);
         void income();
         void foreign_aid();
-        void coup(Player play);
+        void coup(const Player &play);
         int coins();
         string role();
         ~Player();

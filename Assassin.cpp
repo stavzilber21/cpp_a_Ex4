@@ -6,11 +6,14 @@
 #include "Game.hpp"
 using namespace std;
 namespace coup {
-    Assassin::Assassin(Game game,string name): Player(game,name){
+    Assassin::Assassin(const Game &game, const string& name): Player(game,name){
 
     }
-    void coup(Player play){
-
+    Assassin::~Assassin()
+    {
     }
+//    void coup(Player play){
+//
+//    }
 
 }

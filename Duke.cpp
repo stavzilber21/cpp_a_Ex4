@@ -8,13 +8,16 @@
 using namespace std;
 namespace coup {
 
-    Duke::Duke(Game game,string name): Player(game, name){
+    Duke::Duke(const Game &game, const string& name): Player(game, name){
 
     }
-    void tax(){
+    Duke::~Duke()
+    {
+    }
+    void Duke::tax(){
 
     }
-    void block(Assassin assassin){
+    void Duke::block(const Assassin &assassin){
 
     }
 

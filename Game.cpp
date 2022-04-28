@@ -13,14 +13,14 @@ namespace coup {
 
     }
 
-    void turn(){
-
+    string Game::turn(){
+        return "";
     }
-    vector<string> players(){
-
+    vector<string> Game:: players(){
+        return this->Players;
     }
-    string winner(){
-
+    string Game::winner(){
+        return "";
     }
 
 

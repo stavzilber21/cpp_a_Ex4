@@ -4,15 +4,16 @@
 #include "Player.hpp"
 #include "Assassin.hpp"
 #include "Game.hpp"
+#pragma once
 using namespace std;
 namespace coup {
     class Duke: public Player{
     private:
         Game game;
     public:
-        Duke(Game game,string name);
+        Duke(const Game &game, const string& name);
         void tax();
-        void block(Assassin assassin);
+        void block(const Assassin &assassin);
         ~Duke();
     };
 }
